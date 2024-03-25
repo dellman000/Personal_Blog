@@ -1,0 +1,20 @@
+header {
+    display: flex;
+    flex-direction: row;
+    position:fixed;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    /* background-color: blueviolet; */
+    border-bottom: solid black;
+}
+header h1{
+    margin-left: 2%;
+}
+header div{
+    display: flex;
+    justify-content: space-between;
+    /* height: 50%; */
+    margin-right: 5%;
+    width: 13%;
+}

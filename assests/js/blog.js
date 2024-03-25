@@ -1,5 +1,5 @@
-const PostButton = document.querySelector('#Back');
-PostButton.addEventListener('click', createDiv);
+//const PostButton = document.querySelector('#Back');
+//PostButton.addEventListener('click', createDiv);
 
 function createDiv(element){
     const ToInsert=document.querySelector('section')

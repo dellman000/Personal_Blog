@@ -22,7 +22,9 @@ header div{
 /* header button button{
     height: 50%;
 } */
-
+body{
+    background-color: white;
+}
 
 section{
    padding-top: 7%;
@@ -45,4 +47,14 @@ section div footer{
 footer{
     display: flex;
 
+}
+
+.dark-mode-body{
+    background-color: black;
+    color: white;
+    border-color: white;
+}
+
+.dark-mode-section{
+   border-color: white;
 }

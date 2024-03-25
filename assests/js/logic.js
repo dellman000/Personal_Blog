@@ -1,7 +1,7 @@
 let lightmodebtn=document.querySelector('#Mode');
-lightmodebtn.addEventListener('click',Logic)
+lightmodebtn.addEventListener('click',LightLogic)
 
-function Logic(){
+function LightLogic(){
     
     // let bodyColor=document.querySelector('body').style.backgroundColor;
     let bodyColor=document.body
@@ -12,13 +12,15 @@ function Logic(){
         element.classList.toggle("dark-mode-body")
     });
 
+    let currentMode=localStorage.getItem('Mode')
 
    // sectionborder.classList.toggle("dark-mode-section")
-    // if(!bodyColor){
-    //     console.log("white value")
-    // }else{
-
-    // }
-
-
+    if(currentMode=='light' ||!currentMode){
+        console.log("white value to black value")
+        currentMode=localStorage.setItem('Mode','dark');
+    }else if(currentMode=='dark') {
+        console.log("black value to white value")
+        currentMode=localStorage.setItem('Mode','light');
+    }
 }
+
